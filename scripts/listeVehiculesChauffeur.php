@@ -1,0 +1,14 @@
+<?php
+
+$driveBy = $db->prepare('INSERT into VOITURE (IMMATRICULATION, COULEUR, POIDS, PUISSANCE, RESERVOIR, ESSENCE, PLACES, ASSURE, MESSAGE) 
+values (1112223, "NOIR", 1200, 600, 1.2, 1.7, 5, TRUE, "bonjour');
+
+
+$driveByCh = $db->prepare('SELECT * FROM CHAUFFEUR AS CH 
+JOIN VOITURE AS VO 
+ON VO.IMMATRICULATION = CH.VEHICULE;'
+);
+
+getData($driveByCh);
+
+?>
