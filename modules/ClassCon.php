@@ -18,10 +18,10 @@ class databaseCon
     
     // function de connexion
     private function connect() {  
-        $this->host = 'localhost';
-        $this->username = 'root';
-        $this->password = '';
-        $this->db = 'parc_auto';
+        $this->host = 'sql11.freemysqlhosting.net';
+        $this->username = 'sql11466102';
+        $this->password = 'j4YY4cnQdk';
+        $this->db = 'sql11466102';
         try { 
              $con = new PDO('mysql:host='.$this->host.';dbname='.$this->db.';charset=utf8', $this->username, $this->password);
              $con->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
